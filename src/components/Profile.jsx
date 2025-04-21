@@ -1,22 +1,27 @@
-import React from "react";
+import React from 'react';
+import s from './Profile.module.css';
 
-export const Profile = _props => {
-    return (
-        <div className = {'content'}>
+export const Profile = () => {
+    return <div className={s.content}>
+        <div>
+            <img src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350' alt='Pexels Photo' />
+        </div>
+        <div>
+            ava + description
+        </div>
+        <div>
+            My posts
             <div>
-                <img
-                    src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlf5lc5tX-0gY-y94pGS0mQdL-D0lCH2OQ&s"
-                    alt = ""/>
+                New post
             </div>
-            <div>ava+description</div>
-            <div>my posts
-                <div>new posts</div>
-                <div>
-                    <div>post1</div>
-                    <div>post2</div>
-                    <div>post3</div>
+            <div className={s.posts}>
+                <div className={s.item}>
+                    post 1
+                </div>
+                <div className='item'>
+                    post 2
                 </div>
             </div>
         </div>
-    )
+    </div>
 }

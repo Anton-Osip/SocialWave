@@ -1,31 +1,11 @@
 .app-wrapper {
-    display: grid;
-    grid-template-areas: 'header header header'
-'nav content content';
-    grid-template-rows: 60px 1fr;
-    grid-template-columns:2fr 10fr;
-    /*grid-gap: 10px;*/
-    max-width: 1200px;
     margin: 0 auto;
-}
+    display: grid;
+    width: 1200px;
+    grid-template-areas:
+   "h h"
+   "n c";
 
-.header {
-    grid-area: header;
-    background: green;
-}
-
-.header img {
-    width: 60px;
-}
-
-.nav {
-    grid-area: nav;
-    background: burlywood;
-
-}
-
-.content {
-    grid-area: content;
-    background: cornflowerblue;
-
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
 }
